@@ -1,0 +1,123 @@
+body {
+  background-color: #FDECEC;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2D2D2D;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-profil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #E49CA3;
+  margin-top: 20px;
+}
+
+header {
+  background-color: #E49CA3;
+  color: #FFF7F9;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+header p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 3px dashed #E49CA3;
+  padding-bottom: 5px;
+  color: #E49CA3;
+}
+
+h3 {
+  color: #E49CA3;
+}
+
+section {
+  background-color: #FFF7F9;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(228, 156, 163, 0.1);
+}
+
+a {
+  color: #E49CA3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bloc {
+  flex: 1;
+  min-width: 250px;
+}
+
+img[alt="Téléphone"],
+img[alt="Email"] {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.language-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 20px;
+  width: 300px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bar.arabe {
+  width: 100%;
+  background-color: #FF9999;
+}
+
+.bar.francais {
+  width: 75%;
+  background-color: #FFD699;
+}
+
+.bar.anglais {
+  width: 85%;
+  background-color: #B3E0FF;
+}
+
+.bar.allemand {
+  width: 30%;
+  background-color: #D3D3D3;
+}
+#summary-en {
+  background-color: #fce4ec;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
