@@ -1,123 +1,349 @@
+ 
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #FDECEC;
-  font-family: 'Segoe UI', sans-serif;
-  color: #2D2D2D;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF6F8;
+    color: #282028;
+    line-height: 1.6;
 }
 
-.photo-profil {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #E49CA3;
-  margin-top: 20px;
-}
-
-header {
-  background-color: #E49CA3;
-  color: #FFF7F9;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
-}
-
-header p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.2em;
-}
-
-h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  border-bottom: 3px dashed #E49CA3;
-  padding-bottom: 5px;
-  color: #E49CA3;
-}
-
-h3 {
-  color: #E49CA3;
-}
-
-section {
-  background-color: #FFF7F9;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 20px;
-  max-width: 900px;
-  box-shadow: 0 0 10px rgba(228, 156, 163, 0.1);
+h1, h2, h3 {
+    color: #670626;
 }
 
 a {
-  color: #E49CA3;
-  text-decoration: none;
+    color: #670626;
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #A52A50;
 }
 
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+header {
+    background-color: #670626;
+    color: white;
+    padding: 28px 25px;
 }
 
-.bloc {
-  flex: 1;
-  min-width: 250px;
+.entete {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-img[alt="Téléphone"],
-img[alt="Email"] {
-  width: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-.language-bar {
-  background-color: #eee;
-  border-radius: 10px;
-  height: 20px;
-  width: 300px;
-  margin-bottom: 15px;
-  overflow: hidden;
+.entete figure {
+    margin: 0;
+    flex-shrink: 0;
 }
 
-.bar {
-  height: 100%;
-  border-radius: 10px;
+.portrait {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FFBDC5;
 }
 
-.bar.arabe {
-  width: 100%;
-  background-color: #FF9999;
+.identite {
+    flex: 1;
+    text-align: center;
 }
 
-.bar.francais {
-  width: 75%;
-  background-color: #FFD699;
+.identite h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0 0 10px;
 }
 
-.bar.anglais {
-  width: 85%;
-  background-color: #B3E0FF;
+.identite p {
+    margin: 7px 0;
 }
 
-.bar.allemand {
-  width: 30%;
-  background-color: #D3D3D3;
+.sous-titre {
+    font-size: 20px;
+    font-weight: bold;
 }
-#summary-en {
-  background-color: #fce4ec;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 8px;
-  font-family: 'Arial', sans-serif;
-  color: #333;
+
+.objectif {
+    max-width: 700px;
+    margin: 12px auto;
 }
+
+header a {
+    color: #FFBDC5;
+}
+
+header a:hover {
+    color: white;
+}
+
+nav {
+    background-color: #FFBDC5;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #F4D0D8;
+    border-radius: 22px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 27px;
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 3px dashed #FFBDC5;
+}
+
+section h3 {
+    font-size: 20px;
+}
+
+section > p {
+    max-width: 900px;
+    line-height: 1.75;
+}
+
+article {
+    background-color: #FFF7F9;
+    border: 1px solid #F4D0D8;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+#formations article,
+#experiences article {
+    margin-bottom: 15px;
+}
+
+#diplomes article {
+    padding: 20px 25px;
+}
+
+#diplomes article p {
+    margin: 12px 0;
+}
+
+.grille-trois {
+    display: flex;
+    gap: 20px;
+}
+
+.grille-trois article {
+    flex: 1;
+    min-width: 0;
+}
+
+.grille-deux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grille-deux article {
+    margin: 0;
+}
+
+.grille-loisirs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grille-loisirs article {
+    margin: 0;
+}
+
+.photo-tp {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.photo-association {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.photo-loisir {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.fiche {
+    background-color: #FFF7F9;
+    border: 1px solid #F4D0D8;
+    border-radius: 14px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.fiche p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.fiche strong {
+    display: block;
+    color: #670626;
+    margin-bottom: 4px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 240px;
+    border: 1px solid #F4D0D8;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.langue {
+    margin-bottom: 18px;
+}
+
+.langue p {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.barre {
+    background-color: #F5DDE3;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.niveau {
+    background-color: #670626;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.arabe {
+    width: 100%;
+}
+
+.anglais {
+    width: 95%;
+}
+
+.francais {
+    width: 75%;
+}
+
+.espagnol {
+    width: 35%;
+}
+
+.allemand {
+    width: 20%;
+}
+
+footer {
+    background-color: #670626;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFBDC5;
+}
+
+@media screen and (max-width: 700px) {
+    .entete {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .identite h1 {
+        font-size: 29px;
+    }
+
+    .portrait {
+        width: 130px;
+        height: 130px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .grille-trois {
+        flex-direction: column;
+    }
+
+    .grille-deux,
+    .grille-loisirs,
+    .fiche {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-loisir {
+        height: 210px;
+    }
+}
+
+
+
